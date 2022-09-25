@@ -1,0 +1,86 @@
+.terminalParent {
+  font-size: 1.1em;
+  margin: 0 auto;
+  border-radius: 10px;
+  width: 70vw;
+  display: flex;
+  flex-flow: column nowrap;
+}
+
+.topBar {
+  border-radius: 15px 15px 0 0;
+  height: 5vh;
+  background-color: #3b3638;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+}
+
+.circle {
+  width: 2.5vh;
+  height: 2.5vh;
+  border-radius: 50%;
+  display: inline-block;
+  margin-left: 1vw;
+}
+.circle.red {
+  background-color: #fd5d56;
+}
+.circle.yellow {
+  background-color: #febb2e;
+}
+.circle.green {
+  background-color: #27c740;
+}
+
+.terminalInfo {
+  color: #e1e5f2;
+  border-radius: 0 0 15px 15px;
+  background-color: #1e1e1d;
+  display: flex;
+  flex-flow: column nowrap;
+  text-align: left;
+}
+
+.terminalEntry {
+  margin-left: 5vw;
+}
+
+.lastLine {
+  display: inline-block;
+}
+
+.terminalKey {
+  color: #e3dfff;
+}
+
+.terminalProp {
+  color: #dcc48e;
+}
+
+.contactInfo {
+  display: inline;
+}
+
+.contactParent {
+  display: inline-block;
+}
+
+.contactLink {
+  color: #5bc0be;
+}
+
+.terminalCursor {
+  margin-left: 1vw;
+  width: 1vw;
+  height: 1.1em;
+  background-color: #e3dfff;
+  display: inline-block;
+  animation: blink-animation 1s steps(2, start)  infinite;
+}
+
+@keyframes blink-animation {
+  to {
+    visibility: hidden;
+  }
+}
