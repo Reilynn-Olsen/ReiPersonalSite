@@ -1,0 +1,41 @@
+.contactHeader{
+  margin:  7.5vh auto 10vh auto;
+  width: 15vw;
+  padding-bottom: 2.5vh;
+  border-bottom: 7px solid rgb(177, 163, 255);
+}
+
+.contact{
+  display: inline-block;
+  margin-left: .5ch; 
+  font-size: 1.1em;
+  color: black;
+}
+
+.contact>a:hover{
+  color: rgb(133, 133, 133)
+}
+
+.contact>a{
+  color: black;
+  text-decoration: none;
+}
+
+.footer{
+  margin-top: 10vh;
+  color: rgb(133, 133, 133)
+}
+
+@media  (max-width: 769px) {
+  .contactHeader{
+    width: 100%;
+  }
+
+  .contact{
+    display: inline-block;
+    margin: 0 .5ch; 
+    font-size: 1.1em;
+    color: black;
+  }
+
+}

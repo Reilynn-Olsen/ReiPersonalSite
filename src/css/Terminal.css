@@ -46,9 +46,6 @@
   margin-left: 5vw;
 }
 
-.lastLine {
-  display: inline-block;
-}
 
 .terminalKey {
   color: #e3dfff;
@@ -67,20 +64,28 @@
 }
 
 .contactLink {
+  text-decoration: none;
   color: #5bc0be;
 }
 
-.terminalCursor {
-  margin-left: 1vw;
-  width: 1vw;
-  height: 1.1em;
-  background-color: #e3dfff;
+.lastLine {
+  width: 2ch;
   display: inline-block;
-  animation: blink-animation 1s steps(2, start)  infinite;
+  animation: blink .5s step-end infinite alternate;
+  border-right: .8em solid;
+}
+.contactLink:hover{
+  color: #dcc48e;
 }
 
-@keyframes blink-animation {
-  to {
-    visibility: hidden;
+@keyframes blink {
+  50% {
+    border-color: transparent
+  }
+}
+
+@media  (max-width: 769px) {
+  .terminalParent {
+    width: 90vw;
   }
 }

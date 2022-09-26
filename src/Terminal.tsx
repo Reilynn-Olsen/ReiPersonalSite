@@ -50,8 +50,8 @@ function Terminal() {
             {isContactInfo(value) ? (
               <div className="terminalProp">
                 [
-                {value.map((el, i) => (
-                  <div className="contactParent">
+                {value.map((el, idx) => (
+                  <div key={idx} className="contactParent">
                     <p className="contactInfo">"</p>
                     <a
                       className="contactInfo contactLink"
@@ -93,7 +93,6 @@ function Terminal() {
         {getTerminalInfo().map((el) => el)}
         <div className="terminalEntry">
           <p className="lastLine">{'> '}</p>
-          <span className="terminalCursor"></span>
         </div>
       </div>
     </div>

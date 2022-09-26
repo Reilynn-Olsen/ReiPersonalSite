@@ -1,0 +1,159 @@
+.projectsHeader{
+  margin: 10vh auto;
+  width: 15vw;
+  padding-bottom: 2.5vh;
+  border-bottom: 7px solid rgb(177, 163, 255);
+}
+
+.projectContainer {
+  margin: 5vh auto;
+  height: 50vh;
+  max-width: 80vw;
+  border-radius: 75px;
+  box-shadow: 0 0 50px rgba(77, 77, 77, 0.2);
+  display: grid;
+  grid-template-rows: 1fr 1fr;
+  grid-template-columns: 2fr 1fr;
+  justify-items: end;
+  align-items: start;
+}
+
+.project.thumbnail {
+  height: 50vh;
+  width: 20vw;
+  border-radius: 0px 75px 75px 0px;
+  object-fit: cover;
+}
+
+.projectText{
+  display: flex;
+  flex-flow: column nowrap;
+  justify-content: space-around;
+  align-items: flex-start;
+  margin: 0 2.5vw 0 5vw;
+}
+
+.projectTitle{
+  border-bottom: 2px solid rgb(177, 163, 255);
+}
+
+.projectDesc{
+  text-align: left;
+}
+
+.toolContainer {
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: space-evenly;
+
+}
+
+.projectToolTitle{
+  margin-bottom: .25vh;
+}
+
+.tool {
+  border: 2px solid rgb(150, 230, 229);
+  padding: 1vh;
+  border-radius: 5px;
+  text-align: center;
+  line-height: 1.5em;
+  margin: 0 .25vw;
+}
+
+.buttonContainer {
+  display: flex;
+  flex-flow: row wrap;
+  text-align: center;
+  justify-content: space-evenly;
+}
+
+
+.outLink {
+  border-radius: 5px;
+  display: flex;
+  justify-content: space-evenly;
+  flex-flow: row nowrap;
+  align-items: center;
+  margin-bottom: 3vh;
+  text-decoration: none;
+  box-shadow: 10px 5px 5px rgba(77, 77, 77, 0.1);
+  height: 7.5vh;
+  width: 10vw;
+  margin-top: 5vh;
+}
+
+.outLink:hover{
+  animation: float 1s linear 1 forwards;
+}
+
+@keyframes float {
+  to {
+    box-shadow: 8px 3px 3px  rgba(46, 46, 46, 0.2);
+  }
+}
+
+.small.thumbnail {
+  width: 2.5vh;
+  height: 2, 5vh;
+  padding: 0 1vw;
+}
+
+.buttonText {
+  padding: 0vh 1vw;
+  text-decoration: none;
+}
+
+.github{
+  background-color:rgb(177, 163, 255);
+  color: white;
+}
+
+.demo{
+  color:rgb(151, 137, 233);
+  background-color: white;
+}
+
+.demo>svg.thumbnail{
+  fill: rgb(151, 137, 233);
+}
+
+@media  (max-width: 769px) {
+  .projectsHeader{
+    text-align: center;
+    width: 100%;
+    border-bottom: 7px solid rgb(177, 163, 255);
+  }
+
+  .projectContainer {
+    margin: 5vh auto;
+    height: 100%;
+    max-width: 80vw;
+    display: flex;
+    
+  }
+
+  .projectText{
+    align-items: center;
+  }
+
+.projectTitle{
+  width: 85%;
+  border-bottom: none;
+}
+
+  .project.thumbnail {
+    display: none;
+  }
+
+  
+  .projectDesc{
+    text-align: center
+  }
+
+  .outLink{
+    min-width: 25vw;
+    width: 40%
+  }
+
+}

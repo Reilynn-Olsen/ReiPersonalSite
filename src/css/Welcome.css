@@ -1,0 +1,47 @@
+.wrapper {
+  display: grid;
+  margin-left: 30vh;
+}
+
+.welcomeDesc {
+  margin: 1vh 30vh;
+  text-align: left;
+}
+
+.typewriter {
+  color: #747fe0;
+  animation: typing 2s steps(22), blink .5s step-end infinite alternate;
+  white-space: nowrap;
+  overflow: hidden;
+  border-right: .8em solid;
+  font-family: monospace;
+  font-size: 2em;
+}
+
+@keyframes typing {
+  from {
+    width: 0
+  }
+}
+    
+@keyframes blink {
+  50% {
+    border-color: transparent
+  }
+}
+
+@media  (max-width: 769px) {
+  .wrapper {
+    display: grid;
+    margin: 0 auto;
+  }
+  
+  .welcomeDesc {
+    margin: 0 5vw;
+  }
+
+  #Welcome{
+    justify-content: center;
+    text-align: center;
+  }
+}

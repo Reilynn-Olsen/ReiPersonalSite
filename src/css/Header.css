@@ -1,0 +1,26 @@
+.headerContainer{
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: flex-end;
+  gap: 2.5vw;
+  margin: 2.5vh 30vh 0 0;
+
+}
+.headerContainer>li{
+  list-style: none;
+  color: black;
+}
+
+
+.headerContainer>li:hover{
+  cursor: pointer;
+  color: rgb(133, 133, 133)
+}
+
+@media  (max-width: 769px) {
+  .headerContainer{
+    margin: 2.5vh 0 0 0;
+    justify-content: center;
+  }
+}
+
